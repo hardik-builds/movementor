@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    max-width: 100%;
+    overflow-x: clip; /* Modern CSS standard: clips horizontal overflow WITHOUT breaking position: sticky! */
+  }
+  body {
+    background-color: #f7f8f6;
+    color: #131313;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Touch screen hover simulation: active physics on tap */
+@media (hover: none) and (pointer: coarse) {
+  button:active, 
+  .cursor-pointer:active {
+    transform: scale(0.97) !important;
+    transition: transform 0.15s ease !important;
+  }
+}
+
+/* MOVEMENTOR Primary Athletic Buttons */
+.btn-primary-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  background-color: #ddca24;
+  color: #131313;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3px;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 4px 14px rgba(221, 202, 36, 0.28);
+  user-select: none;
+}
+.btn-primary-yellow:hover, .btn-primary-yellow:active {
+  background-color: #131313;
+  color: #ddca24;
+  transform: translateY(-1px) scale(0.99);
+}
+
+.btn-secondary-dark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  background-color: #131313;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3px;
+  transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+  user-select: none;
+}
+.btn-secondary-dark:hover, .btn-secondary-dark:active {
+  background-color: #ddca24;
+  color: #131313;
+  transform: translateY(-1px) scale(0.99);
+}
+
+.btn-outline-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  background-color: #ffffff;
+  color: #131313;
+  border: 1px solid #e4e7eb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+.btn-outline-light:hover, .btn-outline-light:active {
+  border-color: #131313;
+  background-color: #f7f8f6;
+}
+
+/* Light theme cards */
+.maxfiit-card-light {
+  background-color: #ffffff;
+  border: 1px solid #e4e7eb;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.maxfiit-card-light:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-color: #131313;
+}
+
+.font-heading {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Marquee infinite ticker animation (Optimized for Mobile Touch 60FPS) */
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-marquee {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  animation: marquee 24s linear infinite;
+  will-change: transform;
+}
+
+/* Float Bob Animation */
+@keyframes floatBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.animate-float {
+  animation: floatBob 4s ease-in-out infinite;
+}
+
+/* Pulse Glow Keyframes */
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.04); }
+}
+.animate-glow {
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
+
+/* Light scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f8f6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d0d5dd;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ddca24;
+}
