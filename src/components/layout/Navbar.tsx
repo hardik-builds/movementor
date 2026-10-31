@@ -96,10 +96,10 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, setCurrentTab, onOpe
   // --------------------------------------------------------------------------
   if (currentTab === 'customer') {
     return (
-      <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md border-b border-[#e4e7eb] select-none transition-all duration-300">
+      <header className="sticky top-0 z-50 w-full liquid-glass border-b border-white/70 select-none transition-all duration-300 shadow-[0_8px_32px_0_rgba(0,0,0,0.03)]">
         
         {/* Subtle Luxury Top Bar */}
-        <div className="bg-[#131313] text-white text-[10px] sm:text-[11px] font-montserrat tracking-widest px-4 py-1.5 uppercase">
+        <div className="bg-[#131313] text-white text-[10px] sm:text-[11px] font-montserrat tracking-widest px-4 py-1.5 uppercase border-b border-white/5">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <span className="w-1.5 h-1.5 rounded-full bg-[#ddca24] animate-pulse" />
@@ -160,7 +160,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, setCurrentTab, onOpe
               {/* Subtle Operations Portal Switcher */}
               <button
                 onClick={() => setCurrentTab('overview')}
-                className="hidden sm:inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-[2px] border border-neutral-300 hover:border-[#131313] text-neutral-700 hover:text-[#131313] text-xs font-montserrat tracking-wider uppercase transition-colors"
+                className="hidden sm:inline-flex items-center space-x-1.5 px-3.5 py-2 rounded-full liquid-glass-pill hover:bg-white text-neutral-700 hover:text-[#131313] text-xs font-montserrat tracking-wider uppercase transition-colors"
                 title="Open Management & Operations Portal"
               >
                 <span>Operations</span>
@@ -173,7 +173,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentTab, setCurrentTab, onOpe
                   const event = new CustomEvent('open-inquiry-modal', { detail: { plan: 'Complimentary Movement Assessment' } });
                   window.dispatchEvent(event);
                 }}
-                className="px-4 sm:px-5 py-2 sm:py-2.5 bg-[#ddca24] hover:bg-[#131313] text-[#131313] hover:text-white font-montserrat font-bold text-xs tracking-wider uppercase rounded-[2px] transition-all duration-300 shadow-sm"
+                className="px-5 sm:px-6 py-2.5 bg-[#ddca24] hover:bg-[#131313] text-[#131313] hover:text-white font-montserrat font-bold text-xs tracking-wider uppercase rounded-full transition-all duration-300 shadow-[0_4px_18px_rgba(221,202,36,0.35)]"
               >
                 Book Visit
               </button>
