@@ -75,73 +75,81 @@ export const App: React.FC = () => {
         onClose={() => setShowQRKiosk(false)}
       />
 
-      {/* MOVEMENTOR Authentic Brand Footer */}
-      <footer className="mt-16 bg-[#131313] text-white text-xs border-t border-neutral-800 select-none">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="space-y-3">
-              <div className="flex items-center space-x-2.5">
-                <div className="w-8 h-8 bg-[#ddca24] text-[#131313] flex items-center justify-center font-heading font-black text-sm rounded-[3px]">
-                  MV
-                </div>
-                <span className="font-heading font-black text-2xl tracking-wide text-white">
+      {/* MOVEMENTOR Luxury Brand Footer (Anovi Haute Atelier Aesthetic) */}
+      <footer className="mt-24 bg-[#131313] text-white text-xs border-t border-neutral-800 select-none font-montserrat">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div className="space-y-4">
+              <div className="space-y-1">
+                <span className="font-serif text-2xl tracking-[0.2em] font-normal text-white block">
                   MOVEMENTOR
                 </span>
+                <span className="text-[9px] tracking-[0.25em] uppercase text-neutral-400 block">
+                  Strength & Conditioning Academy
+                </span>
               </div>
-              <p className="text-xs leading-relaxed text-neutral-400">
-                Multi-branch athletic conditioning & clinical movement operations system for Mumbai facilities. Custom domain connected with 256-bit SSL encryption.
+              <p className="text-xs leading-relaxed text-neutral-400 font-light">
+                Mumbai’s premier multi-branch sanctuary for progressive strength conditioning, Olympic lifting platforms, and orthopedic sports medicine.
               </p>
-              <div className="text-[11px] font-mono text-neutral-300">
-                Production Domain: <strong className="text-[#ddca24]">app.movementor.in</strong>
-              </div>
+              <a
+                href="https://www.instagram.com/official_movementor?rpxt=MzByeG9heGIxZGhw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-2 text-[#ddca24] hover:text-white transition-colors text-xs font-semibold uppercase tracking-wider"
+              >
+                <span>Instagram: @official_movementor</span>
+                <span className="text-xs">↗</span>
+              </a>
             </div>
 
-            <div>
-              <div className="text-[#ddca24] font-heading font-black uppercase tracking-wider text-sm mb-3">
-                Experience & Portals
+            <div className="space-y-3">
+              <div className="font-montserrat font-bold uppercase tracking-widest text-xs text-[#ddca24]">
+                Sanctuaries
               </div>
-              <ul className="space-y-2 text-xs text-neutral-300">
-                <li><button onClick={() => setCurrentTab('customer')} className="hover:text-white text-[#ddca24] font-bold">★ Customer Home & 3D Skeleton</button></li>
-                <li><button onClick={() => setCurrentTab('overview')} className="hover:text-white">Owner Operations Dashboard</button></li>
-                <li><button onClick={() => setCurrentTab('members')} className="hover:text-white">Member Roster Directory</button></li>
-                <li><button onClick={() => setCurrentTab('workforce')} className="hover:text-white">Workforce & Coaches</button></li>
-                <li><button onClick={() => setCurrentTab('finance')} className="hover:text-white">Unit Economics & P&L</button></li>
+              <ul className="space-y-2.5 text-xs text-neutral-300 font-light">
+                <li><strong className="text-white font-medium">Bandra West Flagship:</strong> Plot 42, Waterfield Road</li>
+                <li><strong className="text-white font-medium">Worli Seaface Club:</strong> Horizon Commercial, Level 14</li>
+                <li><strong className="text-white font-medium">Chembur Academy:</strong> Functional Mobility Studio</li>
+                <li className="text-[#ddca24] font-mono text-[11px]">Hours: 05:30 — 23:00 Daily</li>
               </ul>
             </div>
 
-            <div>
-              <div className="text-[#ddca24] font-heading font-black uppercase tracking-wider text-sm mb-3">
-                Mumbai Facilities
+            <div className="space-y-3">
+              <div className="font-montserrat font-bold uppercase tracking-widest text-xs text-[#ddca24]">
+                Disciplines
               </div>
-              <ul className="space-y-2 text-xs text-neutral-300">
-                <li><strong className="text-white">Bandra West Flagship:</strong> Plot 42, Waterfield Road</li>
-                <li><strong className="text-white">Worli Seaface Club:</strong> Horizon Commercial, Level 14</li>
-                <li><span className="text-neutral-400 font-mono">Hours: 05:30 to 23:00 (Daily)</span></li>
-                <li><span className="text-[#ddca24] font-mono">Turnstile Gates: Online (12ms)</span></li>
+              <ul className="space-y-2 text-xs text-neutral-300 font-light">
+                <li>Biomechanical Strength & Eleiko Platforms</li>
+                <li>Olympic Weightlifting (IWF Calibrated)</li>
+                <li>High-Velocity Turf Sprinting</li>
+                <li>Finnish Cedar Infrared Sauna & Plunge</li>
+                <li>Sports Physician Spinal Assessments</li>
               </ul>
             </div>
 
-            <div>
-              <div className="text-[#ddca24] font-heading font-black uppercase tracking-wider text-sm mb-3">
-                Compliance & Legal
+            <div className="space-y-3">
+              <div className="font-montserrat font-bold uppercase tracking-widest text-xs text-[#ddca24]">
+                Management
               </div>
-              <ul className="space-y-2 text-xs text-neutral-300">
-                <li><button onClick={() => setCurrentTab('privacy')} className="hover:text-white text-[#ddca24] font-bold">Privacy Policy</button></li>
-                <li><button onClick={() => setCurrentTab('privacy')} className="hover:text-white text-[#ddca24] font-bold">Terms & Conditions</button></li>
-                <li><button onClick={() => setCurrentTab('admin')} className="hover:text-white">Hardware Device Logs</button></li>
-                <li><span className="text-emerald-400 font-mono font-bold">SSL 256-bit Active</span></li>
+              <ul className="space-y-2 text-xs text-neutral-300 font-light">
+                <li><button onClick={() => setCurrentTab('overview')} className="hover:text-[#ddca24] transition-colors text-left">Operations & Owner Portal →</button></li>
+                <li><button onClick={() => setCurrentTab('members')} className="hover:text-[#ddca24] transition-colors text-left">Members Roster</button></li>
+                <li><button onClick={() => setCurrentTab('finance')} className="hover:text-[#ddca24] transition-colors text-left">Unit Economics & P&L</button></li>
+                <li><button onClick={() => setCurrentTab('privacy')} className="hover:text-[#ddca24] transition-colors text-left">Privacy & Compliance</button></li>
               </ul>
             </div>
           </div>
 
-          <div className="mt-8 pt-6 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-400">
+          <div className="mt-12 pt-8 border-t border-neutral-800 flex flex-col sm:flex-row items-center justify-between text-[11px] text-neutral-400 font-light">
             <div>
-              © 2026 MOVEMENTOR Athletic Systems Private Limited. All rights reserved.
+              © 2026 MOVEMENTOR Athletic Systems. Handcrafted for Mumbai Movers.
             </div>
-            <div className="flex items-center space-x-4 mt-2 sm:mt-0 font-mono">
-              <span className="text-white">Mumbai Network</span>
+            <div className="flex items-center space-x-4 mt-3 sm:mt-0 font-mono text-[10px]">
+              <span>Bandra</span>
               <span>•</span>
-              <span className="text-[#ddca24]">Optical Gates Active</span>
+              <span>Worli</span>
+              <span>•</span>
+              <span>Chembur</span>
             </div>
           </div>
         </div>

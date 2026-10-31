@@ -22,7 +22,9 @@ export default {
       },
       fontFamily: {
         heading: ['"Roboto Condensed"', 'sans-serif'],
-        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        montserrat: ['"Montserrat"', 'sans-serif'],
+        sans: ['"Montserrat"', '"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
         mono: ['"Space Grotesk"', 'monospace'],
       }
     },
